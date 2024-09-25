@@ -26,7 +26,7 @@ return {
     "ThePrimeagen/refactoring.nvim",
     keys = {
       {
-        "<leader>r",
+        "<leader>rr",
         function()
           require("refactoring").select_refactor()
         end,
@@ -92,6 +92,16 @@ return {
     dependencies = { "hrsh7th/cmp-emoji" },
     opts = function(_, opts)
       table.insert(opts.sources, { name = "emoji" })
+    end,
+  },
+  {
+    "tpope/vim-commentary",
+  },
+
+  {
+    "dmmulroy/tsc.nvim",
+    config = function()
+      require("tsc").setup()
     end,
   },
 }

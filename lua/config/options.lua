@@ -46,3 +46,8 @@ vim.cmd([[au BufNewFile,BufRead Podfile setf ruby]])
 if vim.fn.has("nvim-0.8") == 1 then
   vim.opt.cmdheight = 0
 end
+
+-- Add color column limit
+vim.opt.colorcolumn = "120"
+-- vim.cmd("highlight ColorColumn ctermbg=0 guibg=Yellow")
+vim.cmd("highlight ColorColumn ctermbg=0 guibg=#333333")

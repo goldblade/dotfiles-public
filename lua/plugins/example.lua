@@ -72,6 +72,10 @@ return {
       servers = {
         -- pyright will be automatically installed with mason and loaded with lspconfig
         pyright = {},
+        volar = {
+          -- Enable Take Over Mode (ensures TypeScript functionality within Vue)
+          filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
+        },
       },
     },
   },

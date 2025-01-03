@@ -137,5 +137,50 @@ return {
     "dracula/vim",
     name = "dracula",
     lazy = false,
+    config = function()
+      vim.dracula_disable_background = true
+    end,
+  },
+  {
+    "iruzo/matrix-nvim",
+    name = "matrix",
+    lazy = false,
+    config = function()
+      vim.g.matrix_italic = true
+      vim.g.matrix_disable_background = true
+
+      -- vim.cmd("colorscheme matrix")
+    end,
+  },
+  {
+    "olivercederborg/poimandres.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("poimandres").setup({
+        -- leave this setup function empty for default config
+        -- or refer to the configuration section
+        -- for configuration options
+      })
+    end,
+
+    -- optionally set the colorscheme within lazy config
+    init = function()
+      vim.g.poimandres_italic = true
+      vim.g.poimandres_disable_background = true
+      vim.cmd("colorscheme poimandres")
+    end,
+  },
+  { "datsfilipe/min-theme.nvim" },
+  { "projekt0n/github-nvim-theme" },
+  { "rebelot/kanagawa.nvim" },
+  {
+    "scottmckendry/cyberdream.nvim",
+    config = function()
+      require("cyberdream").setup({
+        transparent = true,
+        vim.api.nvim_set_keymap("n", "<leader>tt", ":CyberdreamToggleMode<CR>", { noremap = true, silent = true }),
+      })
+    end,
   },
 }

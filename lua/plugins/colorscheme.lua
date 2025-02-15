@@ -80,16 +80,16 @@ return {
     lazy = false,
     priority = 1000,
   },
-  {
-    "sainnhe/gruvbox-material",
-    lazy = false,
-    priority = 1000,
-    opts = function()
-      return {
-        transparent = true,
-      }
-    end,
-  },
+  -- {
+  --   "sainnhe/gruvbox-material",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = function()
+  --     return {
+  --       transparent = true,
+  --     }
+  --   end,
+  -- },
   {
     "navarasu/onedark.nvim",
     lazy = false,
@@ -100,16 +100,16 @@ return {
       }
     end,
   },
-  {
-    "tiagovla/tokyodark.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = function()
-      return {
-        transparent = false,
-      }
-    end,
-  },
+  -- {
+  --   "tiagovla/tokyodark.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = function()
+  --     return {
+  --       transparent = false,
+  --     }
+  --   end,
+  -- },
   {
     "sjl/badwolf",
   },
@@ -118,16 +118,16 @@ return {
     lazy = false,
     priority = 1000,
   },
-  {
-    "challenger-deep-theme/vim",
-    lazy = false,
-    priority = 1000,
-    opts = function()
-      return {
-        transparent = false,
-      }
-    end,
-  },
+  -- {
+  --   "challenger-deep-theme/vim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = function()
+  --     return {
+  --       transparent = false,
+  --     }
+  --   end,
+  -- },
   {
     "junegunn/seoul256.vim",
     lazy = false,
